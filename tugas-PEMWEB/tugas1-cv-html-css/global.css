@@ -1,0 +1,148 @@
+/* Pengaturan Dasar Halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontainer Utama */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Profil */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Judul Setiap Bagian */
+h2 {
+    font-size: 1.8em;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Bagian Utama */
+section {
+    margin-bottom: 30px;
+}
+
+/* Profil dengan Foto */
+.profil-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+.profil-teks {
+    flex: 1;
+}
+
+/* Item untuk Pengalaman */
+.item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+.item .detail {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 0 0 10px 0;
+}
+
+/* Keterampilan */
+#keterampilan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#keterampilan li {
+    background: #eaf5fc;
+    color: #3498db;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Kontak */
+#kontak ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#kontak li {
+    margin-bottom: 8px;
+}
+
+/* Desain Responsif untuk Layar Kecil */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .profil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
